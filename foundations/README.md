@@ -50,7 +50,7 @@ foundations/
     └── CMakeLists.txt
 ```
 
-The learning notes for each stage are in [`../log/`](../log/).
+
 
 ## Build and test
 
