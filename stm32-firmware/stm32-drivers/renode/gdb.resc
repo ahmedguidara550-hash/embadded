@@ -1,0 +1,4 @@
+mach create "disco"
+machine LoadPlatformDescription @renode/stm32f407.repl
+sysbus LoadELF @build/blink_cmsis.elf
+machine StartGdbServer 3333
