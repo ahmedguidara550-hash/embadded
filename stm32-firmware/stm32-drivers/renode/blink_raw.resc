@@ -1,0 +1,6 @@
+mach create "disco"
+machine LoadPlatformDescription @renode/stm32f407.repl
+sysbus LoadELF @build/blink_raw.elf
+logLevel -1 sysbus.gpioPortD.UserLED
+emulation RunFor "0.5"
+quit

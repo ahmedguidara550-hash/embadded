@@ -1,0 +1,14 @@
+using "platforms/boards/stm32f4_discovery-kit.repl"
+
+// Make the simulated clocks match the real board after clock_init_168mhz()
+nvic:
+    systickFrequency: 168000000
+timer2:
+    frequency: 84000000
+timer4:
+    frequency: 84000000
+
+// Two sensors that exist only in the simulator.
+bmp180: Sensors.BMP180 @ i2c1 0x77
+
+lm74: Sensors.TI_LM74 @ spi1

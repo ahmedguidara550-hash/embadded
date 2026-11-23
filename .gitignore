@@ -18,3 +18,4 @@ build/
 # editor files
 .vscode/
 build-cmake/
+third_party/
