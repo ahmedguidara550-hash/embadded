@@ -13,5 +13,4 @@ Runs in the Renode simulator, no board needed. Also runs on the STM32F4-Discover
 - Renode 1.17.0 for the simulator
  
 ## Status
-Step 1: startup file (98 vectors), linker script, GPIO blink with raw addresses
-and with the CMSIS headers.
+Step 1: startup file (98 vectors), linker script, GPIO blink with raw addresses and with the CMSIS headers. Stretches: four-LED walk with BSRR, comparison with ST's Reset_Handler, and a CubeMX/HAL blink compared with register code (42 lines against 3).
